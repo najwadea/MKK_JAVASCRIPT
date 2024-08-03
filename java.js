@@ -1,6 +1,6 @@
 function validasi() {
     var nama = document.forms["formku"]["nama"].value;
-    var telepon = document.forms["formku"]["bil1"].value;
+    var bil1 = document.forms["formku"]["bil1"].value;
     var email = document.forms["formku"]["email"].value;
     var ekspresi = /^([A-Za-z0-9_\-\.])+@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
