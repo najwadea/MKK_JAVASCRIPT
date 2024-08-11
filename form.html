@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <script languange="JavaScript" src="java.js"></script>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="title">Form Pendaftaran Ekstrakurikuler</div>
+        <div class="content">
+            <form name="formku" onsubmit="return validasi()">
+                <div class="user-details">
+                    <div class="input-box">
+                        <label for="nama" class="details">Nama Lengkap</label>
+                        <input type="text" placeholder="Masukkan nama lengkap" id="nama" name="nama" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="kelas" class="details">Kelas</label>
+                        <input type="text" placeholder="Masukkan kelas" id="kelas" name="kelas" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="jurusan" class="details">Jurusan</label>
+                        <input type="text" placeholder="Masukkan jurusan" id="jurusan" name="jurusan" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="ekstrakurikuler" class="details">Ekstrakurikuler</label>
+                        <input type="text" placeholder="Masukkan ekstrakurikuler" id="ekstrakurikuler" name="ekstrakurikuler" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="bil1" class="details">Telepon</label>
+                        <input type="bil1" placeholder="Masukkan nomor telepon" id="bil1" name="bil1" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email" class="details">Email</label>
+                        <input type="email" placeholder="Masukkan email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <span class="gender-title">Jenis kelamin</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Daftar" onclick="validasi()">
+                    <input type="reset" class="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
